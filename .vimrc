@@ -47,7 +47,7 @@ let g:autoclose_vim_commentmode = 1
 
 
 """""""""" APPEARANCE """"""""""
-
+set background=light
 syntax on                    " syntax highlighing
 filetype on                  " try to detect filetypes
 filetype plugin indent on    " enable loading indent file for filetype
