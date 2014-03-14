@@ -1,3 +1,9 @@
+" Pathogen
+filetype off
+call pathogen#incubate()
+call pathogen#helptags()
+filetype on
+
 
 
 let mapleader = "`"
@@ -34,20 +40,19 @@ inoremap <leader>k <Esc>:m .-2<CR>==gi
 vnoremap <leader>j :m '>+1<CR>gv=gv
 vnoremap <leader>k :m '<-2<CR>gv=gv
 
-" next pep8 error
-let g:pep8_map='<leader>8'
 
 """""""""" PLUGIN SPECIFIC """"""""""
-
-" change MiniBufExlorer buffers
-let g:miniBufExplMapWindowNavVim = 1
 
 " don't use autoclose for " in vim
 let g:autoclose_vim_commentmode = 1
 
-
 """""""""" APPEARANCE """"""""""
-set background=light
+
+colorscheme codeschool
+set background=dark
+set number
+
+set transparency=7
 syntax on                    " syntax highlighing
 filetype on                  " try to detect filetypes
 filetype plugin indent on    " enable loading indent file for filetype
@@ -58,11 +63,5 @@ set foldlevel=99
 
 " soft tabs
 set expandtab
-
-" Pathogen
-filetype off
-call pathogen#incubate()
-call pathogen#helptags()
-filetype on
 
 set noswapfile
