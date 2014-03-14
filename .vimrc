@@ -40,6 +40,7 @@ inoremap <leader>k <Esc>:m .-2<CR>==gi
 vnoremap <leader>j :m '>+1<CR>gv=gv
 vnoremap <leader>k :m '<-2<CR>gv=gv
 
+nnoremap <leader>t :TlistToggle<CR>
 
 """""""""" PLUGIN SPECIFIC """"""""""
 
@@ -63,5 +64,11 @@ set foldlevel=99
 
 " soft tabs
 set expandtab
+
+
+"""""""""" SEARCH """"""""""
+
+set incsearch
+set hlsearch
 
 set noswapfile
