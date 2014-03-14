@@ -29,9 +29,6 @@ nmap <leader><right> :wincmd l<CR>
 " Git blame
 map <leader>b :Gblame<CR>
 
-" task list
-map <leader>td <Plug>TaskList
-
 " Move line
 nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
@@ -46,6 +43,12 @@ nnoremap <leader>t :TlistToggle<CR>
 
 " don't use autoclose for " in vim
 let g:autoclose_vim_commentmode = 1
+
+let g:pymode_folding = 1
+let g:pymode_breakpoint_bind = '<leader>i'
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_goto_definition_bind = '<leader>d'
+let g:pymode_rope_goto_definition_cmd = 'vnew'
 
 """""""""" APPEARANCE """"""""""
 
@@ -72,3 +75,6 @@ set incsearch
 set hlsearch
 
 set noswapfile
+
+"""""""""" COMPLETION """"""""""
+autocmd FileType python set omnifunc=pythoncomplete#Complete
