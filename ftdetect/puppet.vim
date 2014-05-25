@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.pp set filetype=puppet
+au BufRead,BufNewFile *.pp set filetype=puppet expandtab

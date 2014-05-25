@@ -29,6 +29,9 @@ nmap <leader><right> :wincmd l<CR>
 " Git blame
 map <leader>b :Gblame<CR>
 
+" Lint python
+map <leader>c :PymodeLint<CR>
+
 " Move line
 nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
@@ -52,7 +55,7 @@ let g:pymode_rope_goto_definition_cmd = 'vnew'
 
 """""""""" APPEARANCE """"""""""
 
-colorscheme codeschool
+colorscheme mycodeschool
 set background=dark
 set number
 
@@ -65,9 +68,7 @@ filetype plugin indent on    " enable loading indent file for filetype
 set foldmethod=indent
 set foldlevel=99
 
-" soft tabs
-set expandtab
-
+set cursorline
 
 """""""""" SEARCH """"""""""
 
