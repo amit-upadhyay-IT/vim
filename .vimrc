@@ -53,6 +53,14 @@ let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_goto_definition_bind = '<leader>d'
 let g:pymode_rope_goto_definition_cmd = 'vnew'
 
+
+"vim-go
+let g:go_bin_path = "/opt/vim-go"
+let g:go_fmt_autosave = 0
+
+au FileType go nmap <leader>d <Plug>(go-def-split)
+
+
 """""""""" APPEARANCE """"""""""
 
 colorscheme mycodeschool
