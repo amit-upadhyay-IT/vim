@@ -1,6 +1,6 @@
 " Pathogen
 filetype off
-call pathogen#incubate()
+" call pathogen#incubate()
 call pathogen#helptags()
 filetype on
 
@@ -63,11 +63,11 @@ au FileType go nmap <leader>d <Plug>(go-def-split)
 
 """""""""" APPEARANCE """"""""""
 
-colorscheme mycodeschool
+colorscheme jellybeans
 set background=dark
 set number
 
-set transparency=7
+"set transparency=7
 syntax on                    " syntax highlighing
 filetype on                  " try to detect filetypes
 filetype plugin indent on    " enable loading indent file for filetype
